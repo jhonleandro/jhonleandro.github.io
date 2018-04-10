@@ -18,23 +18,25 @@
 
         var altura = document.imcForm.altura.value;
         var peso = document.imcForm.peso.value;
-        var calculo = (peso/altura*altura);
+        var imc = (peso/altura*altura);
+	imc = parseFloat(imc.toFixed(1));
+		
         
-        if(calculo<18.5){
-        alert("Magro com o indice: " + calculo);
+        if(imc<18.5){
+        alert("Magro com o indice: " + imc);
         }
-        else if(calculo>=18.5 && calculo<24.9){
-        alert("Normal com o indice: " + calculo);
+        else if(imc>=18.5 && imc<24.9){
+        alert("Normal com o indice: " + imc);
         }
         
-        else if(calculo>=25 && calculo<29.9) {
-        alert("Sobre peso com o indice: " + calculo);
+        else if(imc>=25 && imc<29.9) {
+        alert("Sobre peso com o indice: " + imc);
         }
-        else if(calculo>=30 && calculo<39.9) {
-        alert("Obesidade com o indice: " + calculo);
+        else if(imc>=30 && imc<39.9) {
+        alert("Obesidade com o indice: " + imc);
         }
-        else if (calculo>40)
-        alert("Obesidade grave com o indice: " + calculo);
+        else if (imc>40)
+        alert("Obesidade grave com o indice: " + imc);
         }
         
         </script>
