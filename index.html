@@ -18,8 +18,8 @@
 
         var altura = document.imcForm.altura.value;
         var peso = document.imcForm.peso.value;
-        var imc = (peso/altura*altura);
-	imc = parseFloat(imc.toFixed(1));
+	var mult = altura*altura
+        var imc = (peso/mult);
 		
         
         if(imc<18.5){
