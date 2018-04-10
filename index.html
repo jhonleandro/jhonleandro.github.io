@@ -18,8 +18,7 @@
 
         var altura = document.imcForm.altura.value;
         var peso = document.imcForm.peso.value;
-		var altxalt = altura*altura;
-        var calculo = (peso/altxalt);
+        var calculo = (peso/altura*altura);
         
         if(calculo<18.5){
         alert("Magro com o indice: " + calculo);
@@ -80,7 +79,7 @@
 <br/>
 <br/>
 
-<b id="calculadora_imc"> Calculadora IMC </b> </center>
+<b id="calculadora_imc"> Calculadora IMC </b>
 <br/>
 <br/>
 
@@ -99,18 +98,18 @@
 </div>
 
 <div class="form-group">
-<label class="user"> Altura: </label>
+<label class="input"> Altura: </label>
 <input type="text" class="form-control" id="altura" name="tl" placeholder=" 1.77 m">
 
 </div>
 <div class="form-group">
-<label class="user"> Peso: </label>
+<label class="input"> Peso: </label>
 <input type="text" class="form-control" id="peso" name="tl" placeholder=" 70 kg">
 
 </div>
 
 <div class="form-group">
-<label class="user"> Idade: </label>
+<label class="input"> Idade: </label>
 <input type="text" class="form-control" id="idade" name="tl" placeholder=" 28 anos">
 </div>
 
